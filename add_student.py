@@ -41,9 +41,4 @@ def add_student():
     with open("student_data.json", "w") as file:
         json.dump(students, file, indent=4)
 
-    print("\nStudent record added successfully!")
-    print(f"Average Grade for {student['name']} ({student['id']}): {student['average_grade']}")
-
-# Call the function to add a student
-add_student()
 
